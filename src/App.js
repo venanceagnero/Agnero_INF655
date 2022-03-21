@@ -1,25 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const myName = "Venance";
+    const toDoList = [{
+            id: 1,
+            className: "random",
+            title: "Preparation",
+            description: "Prepare for the game",
+            location: "Play field"
+        },
+
+        {
+            id: 2,
+            className: "random",
+            title: "Planning",
+            desciption: "Plan the trip",
+            location: "Main lobby"
+        },
+
+        {
+            id: 3,
+            className: "random",
+            title: "Informing",
+            description: "Inform family and friends",
+            location: "Anywhere"
+        }
+    ];
+
+    const tasktitle = () => {
+        const Tle = Math.floor(Math.random() * 3);
+        return toDoList[Tle].title;
+
+    };
+
+
+    return ( <
+        div className = "App" >
+        <
+        h1 > Tasks < /h1> 
+
+        Hello { myName },
+        your task of < h2 > { tasktitle() } < /h2> should be done!
+
+        <
+        /div >
+    );
 }
 
 export default App;

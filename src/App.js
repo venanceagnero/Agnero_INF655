@@ -1,50 +1,49 @@
 import './App.css';
 
 function App() {
-
-    const myName = "Venance";
+    const myName = 'Tony';
     const toDoList = [{
             id: 1,
-            className: "random",
-            title: "Preparation",
-            description: "Prepare for the game",
-            location: "Play field"
+            className: 'random',
+            title: 'Preparation',
+            description: 'Prepare for the game',
+            location: 'Play field',
         },
 
         {
             id: 2,
-            className: "random",
-            title: "Planning",
-            desciption: "Plan the trip",
-            location: "Main lobby"
+            className: 'random',
+            title: 'Planning',
+            desciption: 'Plan the trip',
+            location: 'Main lobby',
         },
 
         {
             id: 3,
-            className: "random",
-            title: "Informing",
-            description: "Inform family and friends",
-            location: "Anywhere"
-        }
+            className: 'random',
+            title: 'Informing',
+            description: 'Inform family and friends',
+            location: 'Anywhere',
+        },
     ];
 
     const tasktitle = () => {
         const Tle = Math.floor(Math.random() * 3);
         return toDoList[Tle].title;
-
     };
-
 
     return ( <
         div className = "App" >
         <
-        h1 > Tasks < /h1> 
-
-        Hello { myName },
-        your task of < h2 > { tasktitle() } < /h2> should be done!
-
+        h2 > Tasks < /h2>{' '} <
+        p > { ' ' } <
+        em > { ' ' }
+        Hello < b > { myName } < /b>, please your task of <b> {tasktitle()} </b >
+        needs to be started!
         <
-        /div >
+        /em>{' '} <
+        /p>{' '} <
+        /div>
     );
 }
 

@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import Card from '../Shared/Card';
 
 export default function Users() {
-    const params = useParams();
+    const params = useParams({ name: 'Jule', id: '347j893' });
     return ( <
         Card >
         <

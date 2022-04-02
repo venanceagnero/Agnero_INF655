@@ -8,12 +8,6 @@ export default function Userlogin() {
     const [userName, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
-    // const HandleLogin = setLogin(); {
-    //     if (userName && password) {
-    //         return <Users / > ;
-    //     }
-    // }
-
     return ( <
         Card className = "card" > { ' ' } <
         div > { ' ' } <

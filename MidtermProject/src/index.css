@@ -1,0 +1,175 @@
+.pagebody {
+    font-size: 'Poppins', sans-serif;
+    background-color: #ee9520;
+    color: rgb(3, 3, 3);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 768px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.header {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    place-content: center;
+}
+
+.footer {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    place-content: center;
+}
+
+.card {
+    background-attachment: #fff;
+    border-radius: 15px;
+    color: #333;
+    padding: 40px 50px;
+    margin-left: 50px;
+    position: relative;
+    width: 70%;
+}
+
+.text-display {
+    position: relative;
+    font-weight: bold;
+}
+
+.inputForm {
+    background-color: #fff;
+    width: 95%;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.inputField {
+    width: 100%;
+    margin: auto;
+}
+
+.btn-default {
+    color: rgb(12, 11, 11);
+    border: 0;
+    border-radius: 18px;
+    color: rgb(7, 7, 7);
+    width: 100px;
+    height: 40px;
+    cursor: ponter;
+}
+
+.deleteIcone {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.deditTask {
+    position: right;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.checkitem {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.inputBox {
+    min-height: 40px;
+    font-size: 1rem;
+    margin: 2%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.searchform {
+    flex-grow: 1;
+    min-width: 40%;
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 0.25rem;
+    border-radius: 15px;
+    outline: none;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+.links {
+    display: flex;
+    justify-content: space;
+    color: #fff;
+    text-decoration: none;
+    margin: 1%;
+}
+
+.Link Link {
+    text-decoration: none;
+    color: black;
+}
+
+.Link {
+    background-color: white;
+    width: 100%;
+    border-radius: 15px;
+    height: 50px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.nav-link {
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.Title {
+    text-align: left;
+}
+
+.checkitem {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.editTask {
+    right: 40px;
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.deleteIcone {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.textp {
+    margin-left: 200px;
+    font-weight: bold;
+    font-size: 1em;
+}

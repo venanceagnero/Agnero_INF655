@@ -51,24 +51,6 @@ export const MovieProvider = ({ children }) => {
         setMovielist([favoriteMoviedata, ...favoritelist]);
     };
 
-    //to edit task
-    // const editTask = (task) => {
-    //     setEditTask({ task, edit: true });
-    // };
-
-    //to update task
-    // const updateTask = async(id, updTask) => {
-    // const response = await fetch('http://localhost:5000/movies/$(id)', {
-    //    method: 'PUT',
-    //    headers: { 'Content-type': 'application/json' },
-    //    body: JSON.stringify(updMovie),
-    //   });
-    // const Moviedata = await response.json();
-    //     setTasklist(
-    //         tasklist.map((task) => (task.id === id ? {...task, ...Moviedata } : task))
-    //     );
-    // };
-
     //to delete the movie
     const deleteMovie = async(id) => {
         if (window.confirm('Are you sure you want to delete this item?')) {

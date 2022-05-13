@@ -1,4 +1,3 @@
-
 import { useContext } from 'react';
 import { FaPlus } from 'react-icons/fa';
 import React from 'react';
@@ -25,12 +24,19 @@ export default function Movie({
     return ( <
         Card >
         <
+        form > { ' ' } <
         input type = "checkbox"
         className = "checkitem"
         checked = { checked }
         onChange = {
             () => checkMovie(id) }
         />{' '} <
+        button onClick = { AddtoFlist }
+        className = "addIcone" >
+        <
+        div style = { checked ? { color: 'white' } : null } > Add < /div>{' '} <
+        /button>{' '} <
+        /form>{' '} <
         div className = "row" > { ' ' } <
         div className = "text-display col-sm-2 col-lg-8" >
         Movie name: { movie_name } { ' ' } <
@@ -73,13 +79,6 @@ export default function Movie({
         /div>{' '} <
         /div>{' '} <
         div > < /div>{' '} <
-        div > { ' ' } <
-        button onClick = { AddtoFlist }
-        className = "addIcone" >
-        <
-        div style = { checked ? { color: 'white' } : null } > Add < /div>{' '} <
-        /button>{' '} <
-        /div>{' '} <
         /Card>
     );
 }

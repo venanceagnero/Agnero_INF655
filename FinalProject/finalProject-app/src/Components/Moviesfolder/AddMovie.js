@@ -1,4 +1,3 @@
-
 import React, { useContext, useState, useEffect } from 'react';
 import Card from '../Shared/Card';
 import MovieContext from '../context/moviecontext';
@@ -12,13 +11,6 @@ export default function AddMovie({ AddingMovie }) {
     const [youtube_link, setYoutube_link] = useState('');
     const [ratings, setRatings] = useState('');
     const { addMovie } = useContext(MovieContext);
-
-    // useEffect(() => {
-    //     if (edittask.edit === true) {
-    //         setTitle(edittask.task.title);
-    //         setDescription(edittask.task.description);
-    //     }
-    // }, [edittask]);
 
     const ChangingMname = (elmt) => {
         setMovie_name(elmt.target.value);

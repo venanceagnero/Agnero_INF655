@@ -1,6 +1,6 @@
-
 import { useState, useContext } from 'react';
 import MovieContext from '../context/moviecontext';
+import SearchMovie from './searchMovie';
 import Spinner from '../Shared/spinner';
 import Movie from './Movie';
 
@@ -13,13 +13,24 @@ export default function Movieslist() {
     );
 
     if (!isLoading && (!result || result.length === 0)) {
-        return <p > No movie < /p>;
+        return ( <
+            > { ' ' } <
+            SearchMovie search = { search }
+            setSearch = { setSearch }
+            />{' '} <
+            p > No such movie found < /p>{' '} <
+            />
+        );
     }
 
     return isLoading ? ( <
         Spinner / >
     ) : ( <
-        div > { ' ' } {
+        div > { ' ' } <
+        SearchMovie search = { search }
+        setSearch = { setSearch }
+        />{' '} <
+        h5 className = "Title" > Your favorite movies < /h5>{' '} {
             result.map((movie) => ( <
                 Movie key = { movie.id }
                 id = { movie.id }

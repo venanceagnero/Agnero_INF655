@@ -11,12 +11,12 @@ export default function AddFromMoviesList({ AddingMovie }) {
     const [image, setImage] = useState('');
     const [youtube_link, setYoutube_link] = useState('');
     const [ratings, setRatings] = useState('');
-    const [CheckMovie, setCheckMovie] = useState('');
+    //const [CheckMovie, setCheckMovie] = useState('');
     const { addMovie, checkMovie } = useContext(MovieContext);
 
     const SubmitMovie = (elmt) => {
         elmt.preventDefault();
-        if (checkMovie) {
+        if (checkMovie.id) {
             const newMovie = {
                 movie_name,
                 director,
@@ -31,7 +31,7 @@ export default function AddFromMoviesList({ AddingMovie }) {
 
             // clear input
 
-            setCheckMovie('');
+            // setCheckMovie('');
         }
     };
 

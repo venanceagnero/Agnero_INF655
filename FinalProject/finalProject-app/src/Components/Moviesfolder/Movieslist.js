@@ -30,7 +30,7 @@ export default function Movieslist() {
         SearchMovie search = { search }
         setSearch = { setSearch }
         />{' '} <
-        h5 className = "Title" > Your favorite movies < /h5>{' '} {
+        h5 className = "Title" > Movies List < /h5>{' '} {
             result.map((movie) => ( <
                 Movie key = { movie.id }
                 id = { movie.id }
